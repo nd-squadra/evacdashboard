@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Login from './login.js';
-import Dashboard from './scroller.js'
+import Dashboard from './DashboardFull.js'
 
 class App extends React.Component{
   constructor() {
@@ -34,6 +34,9 @@ class App extends React.Component{
             <Dashboard setCurrentPage={this.setCurrentPage}/>
           </div>
       );
+    }
+    else {
+      console.log("This is Final")
     }
     return null;
   }
