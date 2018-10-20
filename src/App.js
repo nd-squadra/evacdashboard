@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Login from './login.js';
+import Dashboard from './scroller.js'
 
 class App extends React.Component{
   constructor() {
@@ -26,6 +27,13 @@ class App extends React.Component{
               <Login setCurrentPage={this.setCurrentPage}/>
             </div>
         );
+    }
+    else if (this.state.currentPage === "Dashboard") {
+      return (
+          <div>
+            <Dashboard setCurrentPage={this.setCurrentPage}/>
+          </div>
+      );
     }
     return null;
   }

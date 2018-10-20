@@ -27,6 +27,14 @@
   height: 100px;
 }
 
+.DashProfile{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 25%;
+}
+
 .enter{
   text-align: center;
     border-radius: 25px;
@@ -78,4 +86,43 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.menu-item {
+  padding: 0 40px;
+  margin: 5px 10px;
+  user-select: none;
+  cursor: pointer;
+  border: none;
+}
+.menu-item-wrapper.active {
+  border: 1px blue solid;
+}
+.menu-item.active {
+  border: 1px green solid;
+}
+
+.scroll-menu-arrow {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.a {
+    text-indent: 50px;
+}
+
+.b {
+    text-indent: 100px;
+}
+
+.c {
+    text-indent: 30px;
+}
+
+.scrollerback{
+  background-color: #7fdcc9;
+}
+
+dt{
+  font-size: 20px;
 }
