@@ -9,10 +9,11 @@ import Header from './topheader.js'
 class FullDash extends React.Component {
  render(){
    console.log("Dashboard is here.")
+   console.log(this.props)
     return (
         <div>
             <Header />
-            <Dashboard setCurrentPage={this.props.setCurrentPage}/>
+            <Dashboard setCurrentPage={this.props.setCurrentPage} getNumOfFlaggedCases={this.props.getNumOfFlaggedCases} getNameOfFlaggedCases={this.props.getNameOfFlaggedCases} getName={this.props.getName}/>
         </div>
     );
     }

@@ -13,8 +13,8 @@ class ContainerRow extends React.Component {
 
     return (
         <div className='rowC'>
-            <Scroller />
-            <Alerts setCurrentPage={this.props.setCurrentPage}/>
+            <Scroller getNameOfFlaggedCases={this.props.getNameOfFlaggedCases} getNumOfFlaggedCases={this.props.getNumOfFlaggedCases} getName={this.props.getName}/>
+            <Alerts setCurrentPage={this.props.setCurrentPage} getNumOfFlaggedCases={this.props.getNumOfFlaggedCases}/>
         </div>
     );
     }

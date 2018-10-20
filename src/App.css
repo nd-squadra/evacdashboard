@@ -55,7 +55,7 @@
   width: 150px;
   height: 150px;
   position: relative;
-  left: 10%;
+  left: 5%;
 }
 
 .enter{
@@ -151,12 +151,13 @@
 }
 
 .c {
-    text-indent: 30px;
+    text-indent: 20px;
     background-color: #7fdcc9;
 }
 
 .scrollerback{
   background-color: #7fdcc9;
+  color: white;
 }
 
 dt{
@@ -173,7 +174,7 @@ dt{
 }
 
 .topheaderLogo {
-  width: 20%;
+  width: 10%;
   height: 10%;
 }
 

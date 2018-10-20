@@ -8,7 +8,7 @@ class Alerters extends React.Component{
                 <div className="valign">
                   <h1 className="alertsDashboard">
                   <img className="alertsSymbols" src={require("./exclaimation.png")}></img>
-                  You have 1 flagged case
+                  You have {this.props.getNumOfFlaggedCases()} flagged cases
                   <button type="submit" className="Review" onClick={() => this.props.setCurrentPage("Final")}> Review </button>
                   </h1>
 

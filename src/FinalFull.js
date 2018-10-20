@@ -12,7 +12,7 @@ class FullDash extends React.Component {
     return (
         <div>
             <Header />
-            <Final setCurrentPage={this.props.setCurrentPage}/>
+            <Final setCurrentPage={this.props.setCurrentPage} getNumOfFlaggedCases={this.props.getNumOfFlaggedCases} getNameOfFlaggedCases={this.props.getNameOfFlaggedCases} getName={this.props.getName}/>
         </div>
     );
     }

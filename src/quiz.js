@@ -6,10 +6,10 @@ import FreeScrollBar from 'react-free-scrollbar';
 class Login extends React.Component{
   render(){
     return(
-      <div style={{width: '800px', height: '350px'}}> <br/>
+      <div style={{width: '75%', height: '350px'}}> <br/>
 
         <div className='rowC'>
-        <img src={require("./vicpic.jpg")} className="VicProfile"></img> <br/> <br/>
+        <img src={require("./face2.png")} className="VicProfile"></img> <br/> <br/>
         <h3 className="victim" >This student was flagged after showing potential symptoms of having received abuse at home. Please review this case</h3>
         </div>
 
