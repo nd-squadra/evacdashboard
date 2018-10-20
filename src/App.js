@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Login from './login.js';
-import Dashboard from './DashboardFull.js'
+import Dashboard from './DashboardFull.js';
+import Final from './FinalFull.js';
 
 class App extends React.Component{
   constructor() {
@@ -35,8 +36,12 @@ class App extends React.Component{
           </div>
       );
     }
-    else {
-      console.log("This is Final")
+    else if (this.state.currentPage === "Final"){
+      return (
+        <div>
+          <Final setCurrentPage={this.setCurrentPage}/>
+        </div>
+      );
     }
     return null;
   }

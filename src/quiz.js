@@ -6,31 +6,50 @@ import FreeScrollBar from 'react-free-scrollbar';
 class Login extends React.Component{
   render(){
     return(
-      <div style={{width: '600px', height: '500px'}} className="scrollerback"> <br/>
-        <img src={require("./avatar.png")} className="DashProfile"></img> <br/> <br/>
+      <div style={{width: '800px', height: '350px'}}> <br/>
+
+        <div className='rowC'>
+        <img src={require("./vicpic.jpg")} className="VicProfile"></img> <br/> <br/>
         <h3 className="victim" >This student was flagged after showing potential symptoms of having received abuse at home. Please review this case</h3>
-        <FreeScrollBar className="scrollerback">
-          <dl className="a">
-            <dt>Dashboard</dt><br/>
-            <dt><b>Flagged Cases</b></dt>
-              <dd className="b"><b>Paul</b></dd><br/>
-            <dt>List of Students</dt>
-              <dd className="b">Matthew</dd>
-              <dd className="b">Mark</dd>
-              <dd className="b">Luck</dd>
-              <dd className="b">John</dd>
-              <dd className="b">Paul</dd>
-              <dd className="b">James</dd>
-              <dd className="b">Peter</dd>
-              <dd className="b">Andrew</dd>
-              <dd className="b">Joseph</dd>
-              <dd className="b">Shaun</dd>
-              <dd className="b">Hazel</dd>
-              <dd className="b">Si Han</dd>
-              <dd className="b">Jianzhi</dd>
-              <dd className="b">Benerd</dd>
-              <dd className="b">Ivan</dd>
-            </dl>
+        </div>
+
+        <h3 className="a"> Questionnaire</h3>
+        <FreeScrollBar>
+        <form className="a">
+            <dt>Q1: How would you rate the recent attendance of the child?</dt><br/>
+            <dd><input type="radio" /> Always Absent<br/></dd>
+            <dd><input type="radio" /> Occasionally Absent <br/></dd>
+            <dd><input type="radio" /> Neutral<br/></dd>
+            <dd><input type="radio" /> Seldom Absent<br/></dd>
+            <dd><input type="radio" /> Never Absent<br/></dd>
+
+            <br/>
+            <dt>Q2: Is there a significant decrease in the child's academic performance?</dt><br/>
+            <dd><input type="radio" /> Yes<br/></dd>
+            <dd><input type="radio" /> No<br/></dd>
+
+            <br/>
+            <dt>Q3: How nourished do you think the child is?</dt><br/>
+            <dd><input type="radio" /> Severely malnourished<br/></dd>
+            <dd><input type="radio" /> Somewhat malnourished <br/></dd>
+            <dd><input type="radio" /> Neutral<br/></dd>
+            <dd><input type="radio" /> Somewhat healthy<br/></dd>
+            <dd><input type="radio" /> Very healthy<br/></dd>
+
+            <br/>
+            <dt>Q4: How would you describe the conduct of the child?</dt><br/>
+            <dd><input type="radio" /> Very poor<br/></dd>
+            <dd><input type="radio" /> Poor <br/></dd>
+            <dd><input type="radio" /> Neutral<br/></dd>
+            <dd><input type="radio" /> Good<br/></dd>
+            <dd><input type="radio" /> Very good<br/></dd>
+
+            <br/>
+            <dt>Q5: Is there a change in the child's recent behavior compared to 1 month ago?</dt><br/>
+            <dd><input type="radio" /> Yes<br/></dd>
+            <dd><input type="radio" /> No<br/></dd>
+
+        </form>
         </FreeScrollBar>
       </div>
     )

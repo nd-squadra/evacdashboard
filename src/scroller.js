@@ -6,7 +6,7 @@ import FreeScrollBar from 'react-free-scrollbar';
 class Scroller extends React.Component{
   render(){
     return(
-      <div style={{width: '400px', height: '500px'}} className="scrollerback"> <br/>
+      <div style={{width: '400px', height: '290px'}} className="scrollerback"> <br/>
         <img src={require("./avatar.png")} className="DashProfile"></img> <br/> <br/>
         <h3 className="c">Welcome, Mr Ho Wei Kang</h3>
         <FreeScrollBar className="scrollerback">

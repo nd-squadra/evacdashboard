@@ -5,19 +5,19 @@ class Alerters extends React.Component{
     render(){
         return(
             <div>
-                <div>
+                <div className="valign">
                   <h1 className="alertsDashboard">
                   <img className="alertsSymbols" src={require("./exclaimation.png")}></img>
                   You have 1 flagged case
-                  <button type="submit" className="Review" align="center" onClick={() => this.props.setCurrentPage("Final")}> Review </button>
+                  <button type="submit" className="Review" onClick={() => this.props.setCurrentPage("Final")}> Review </button>
                   </h1>
 
                 </div>
-                <div>
+                <div className="valign">
                   <h1 className="alertsDashboard">
                   <img className="alertsSymbols" src={require("./question.png")}></img>
-                  Not sure if your student is at risk?
-                  <button type="submit" value="Review" className="Review" align="center" > Check </button>
+                  Suspicious of domestric abuse?
+                  <button type="submit" value="Review" className="Review" > Check </button>
                   </h1>
                 </div>
             </div>
